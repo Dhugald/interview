@@ -56,7 +56,8 @@ namespace AI
         static void Main()
         {
             Dhugald();
-
+            Todd();
+            Fynn();
 
         }
     }
