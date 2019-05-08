@@ -8,7 +8,7 @@ namespace AI
 {
     class AIProgram
     {
-        public static int age;
+        public static int age, experience;
         public static string name;
 
         public static void Todd()
@@ -20,77 +20,10 @@ namespace AI
 
             Console.WriteLine($"{age}");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            Console.WriteLine("What is your name? ");
+            name = Console.ReadLine();
+            Console.ReadLine();
+            Console.WriteLine(name);
 
             Console.ReadLine();
 
@@ -116,10 +49,7 @@ namespace AI
         }
         public static void Dhugald()
         {
-            Console.WriteLine("What is your name? ");
-            name = Console.ReadLine();
-            Console.ReadLine();
-            Console.WriteLine(name);
+            
 
 
         }
