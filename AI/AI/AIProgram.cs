@@ -34,9 +34,10 @@ namespace AI
         }
         public static void Dhugald()
         {
-
-
-
+            Console.WriteLine("What is your name? ");
+            string answer1 = Console.ReadLine();
+            Console.ReadLine();
+            Console.WriteLine(answer1);
 
 
         }
@@ -47,6 +48,9 @@ namespace AI
 
         static void Main()
         {
+            Dhugald();
+
+
         }
     }
 }
