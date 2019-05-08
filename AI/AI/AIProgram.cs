@@ -8,10 +8,17 @@ namespace AI
 {
     class AIProgram
     {
+        public static int age;
+
         public static void Todd()
         {
+            string temp;
+            Console.WriteLine("How old are you?");
+            temp = Console.ReadLine();
+            age = Convert.ToInt32(temp);
 
-
+            Console.WriteLine($"{age}");
+            Console.ReadLine();
 
 
 
