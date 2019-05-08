@@ -25,7 +25,10 @@ namespace AI
         }
         public static void Fynn()
         {
-
+            Console.WriteLine($"Because you are {age} years old do you think that you are qualified for this job? ");
+            string answer2 = Console.ReadLine();
+            Console.ReadLine();
+            Console.WriteLine();
 
 
 
