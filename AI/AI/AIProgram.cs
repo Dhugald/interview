@@ -9,7 +9,7 @@ namespace AI
     class AIProgram
     {
         public static int age, experience;
-        public static string name;
+        public static string name, AnswerMcDonalds, Leaving;
 
         public static void Todd()
         {
@@ -70,7 +70,25 @@ namespace AI
         }
         public static void Dhugald()
         {
-            
+            Console.WriteLine($"Have you worked at McDonalds in the past? (Yes/No)");
+            AnswerMcDonalds = Console.ReadLine().ToUpper();
+
+            if (AnswerMcDonalds == "YES")
+            {
+                Console.WriteLine("Please enter your reason for leaving: ");
+                Leaving = Console.ReadLine();
+            }
+            if (AnswerMcDonalds == "NO")
+            {
+
+            }
+
+
+
+
+
+
+       
 
 
         }
