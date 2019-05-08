@@ -8,8 +8,8 @@ namespace AI
 {
     class AIProgram
     {
-        public static int age, experience;
-        public static string name, AnswerMcDonalds, Leaving;
+        public static int age, experience, hearAboutJob;
+        public static string name, AnswerMcDonalds, Leaving, Driver;
 
         public static void Todd()
         {
@@ -57,13 +57,18 @@ namespace AI
                 Console.WriteLine("Please enter your reason for leaving: ");
                 Leaving = Console.ReadLine();
             }
-            if (AnswerMcDonalds == "NO")
+            if (AnswerMcDonalds != "YES" && AnswerMcDonalds != "NO")
             {
-
+                Console.WriteLine("Invalid answer Please enter again: ");
             }
 
+            Multichoice1();
+            Console.WriteLine("Please enter a number of the answer");
+            string temp = Console.ReadLine();
+            hearAboutJob = Convert.ToInt32(temp);
 
-
+            Console.WriteLine("Do you have your drivers licence? (Yes / No)");
+            Driver = Console.ReadLine().ToUpper();
 
 
 
@@ -71,7 +76,16 @@ namespace AI
 
 
         }
+        public static void Multichoice1()
+        {
+            Console.Clear();
+            Console.WriteLine("How did you hear about the job?");
+            Console.WriteLine("1    On an advertisement");
+            Console.WriteLine("2    From a friend");
+            Console.WriteLine("3    Phonebook");
+            Console.WriteLine("4    Other");
 
+        }
 
 
 
