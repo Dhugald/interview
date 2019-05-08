@@ -8,6 +8,43 @@ namespace AI
 {
     class AIProgram
     {
+        public static void Todd()
+        {
+
+
+
+
+
+        }
+        public static void Fynn()
+        {
+
+
+
+
+
+        }
+        public static void Taylor()
+        {
+
+
+
+
+
+        }
+        public static void Dhugald()
+        {
+
+
+
+
+
+        }
+
+
+
+
+
         static void Main()
         {
         }
