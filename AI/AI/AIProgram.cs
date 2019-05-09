@@ -9,9 +9,9 @@ namespace AI
     class AIProgram
     {
         public static int age, experience, hearAboutJob;
-        public static string name, AnswerMcDonalds, Leaving, Driver;
+        public static string name, AnswerMcDonalds, Leaving, DegreeYN, NumDegrees;
+        public static string[] DegreesArray = new string[];
         public static bool student;
-
         public static void Todd()
         {
             string temp;
@@ -99,12 +99,32 @@ namespace AI
             }
 
             Multichoice1();
-            Console.WriteLine("Please enter a number of the answer");
+            Console.WriteLine("Please enter a number for the answer");
             string temp = Console.ReadLine();
             hearAboutJob = Convert.ToInt32(temp);
 
-            Console.WriteLine("Do you have your drivers licence? (Yes / No)");
-            Driver = Console.ReadLine().ToUpper();
+
+            Console.WriteLine("Do you have any Degree(s)? (Yes/No)");
+            string degreeYN = Console.ReadLine().ToLower();
+            int NumDegrees = 0;
+            if (degreeYN == "yes")
+            {
+                Console.WriteLine("How many?");
+                temp = Console.ReadLine();
+                NumDegrees = Convert.ToInt32(temp);
+
+                for (int i = 0; i < NumDegrees; i++)
+                {
+                    Console.WriteLine($"Please enter number {i+1} degree: ");
+                    temp = Console.ReadLine();
+                    string[] DegreesArray = new string[NumDegrees];
+                }
+            }
+
+
+
+        
+
 
 
 
