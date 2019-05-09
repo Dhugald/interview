@@ -9,21 +9,36 @@ namespace AI
     class AIProgram
     {
         public static int age, experience, hearAboutJob;
-        public static string name, AnswerMcDonalds, Leaving, Driver;
-
+        public static string name, AnswerMcDonalds, Leaving, DegreeYN, NumDegrees;
+        public static string[] DegreesArray = new string[];
+        public static bool student;
         public static void Todd()
         {
             string temp;
+            Console.WriteLine("What is your name? ");
+            name = Console.ReadLine();
+
             Console.WriteLine("How old are you?");
             temp = Console.ReadLine();
             age = Convert.ToInt32(temp);
 
-            Console.WriteLine($"{age}");
+            Console.WriteLine("Have you worked in hospitality before? Yes/No");
+            if (Console.ReadLine().ToUpper() == "YES")
+            {
+                Console.WriteLine("How many years have you worked in hospitality?");
+                temp = Console.ReadLine();
+                experience = Convert.ToInt32(temp);
+            }
 
-            Console.WriteLine("What is your name? ");
-            name = Console.ReadLine();
-            Console.ReadLine();
-            Console.WriteLine(name);
+            Console.WriteLine("Are you currently a student? Yes/No");
+            if (Console.ReadLine().ToUpper() == "YES")
+            {
+                student = true;
+            }
+            else
+            {
+                student = false;
+            }
 
             Console.ReadLine();
 
@@ -58,10 +73,7 @@ namespace AI
                 answer3 = Console.ReadLine();
 
             }
-           
-          
-            
-            
+
             Console.WriteLine("Can you work weekends? ");
             answer4 = Console.ReadLine();
             Console.WriteLine("Do you have a drivers license? (Yes/No) ");
@@ -96,15 +108,40 @@ namespace AI
             }
 
             Multichoice1();
-            Console.WriteLine("Please enter a number of the answer");
+            Console.WriteLine("Please enter a number for the answer");
             string temp = Console.ReadLine();
             hearAboutJob = Convert.ToInt32(temp);
 
+<<<<<<< HEAD
             
+=======
+
+            Console.WriteLine("Do you have any Degree(s)? (Yes/No)");
+            string degreeYN = Console.ReadLine().ToLower();
+            int NumDegrees = 0;
+            if (degreeYN == "yes")
+            {
+                Console.WriteLine("How many?");
+                temp = Console.ReadLine();
+                NumDegrees = Convert.ToInt32(temp);
+
+                for (int i = 0; i < NumDegrees; i++)
+                {
+                    Console.WriteLine($"Please enter number {i+1} degree: ");
+                    temp = Console.ReadLine();
+                    string[] DegreesArray = new string[NumDegrees];
+                }
+            }
 
 
 
-       
+        
+
+
+>>>>>>> 2e25a9b78fbbd5af3ff946f06481d8b70ff1c03a
+
+
+
 
 
         }
@@ -124,8 +161,8 @@ namespace AI
 
         static void Main()
         {
-            Dhugald();
             Todd();
+            Dhugald();
             Fynn();
 
         }
