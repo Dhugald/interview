@@ -12,8 +12,6 @@ namespace AI
         public static string name, AnswerMcDonalds, Leaving, DegreeYN, NumDegrees;
 <<<<<<< HEAD
         public static string[] DegreesArray;
-=======
-        public static string[] DegreesArray = new string[];
         public static bool student;
 >>>>>>> 2e25a9b78fbbd5af3ff946f06481d8b70ff1c03a
         public static void Todd()
