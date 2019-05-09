@@ -15,7 +15,7 @@ namespace AI
         public static void Todd()
         {
             string temp;
-            Console.WriteLine("What is your name? ");
+            Console.WriteLine("What is your name?");
             name = Console.ReadLine();
 
             Console.WriteLine("How old are you?");
@@ -40,6 +40,7 @@ namespace AI
                 student = false;
             }
 
+            Console.WriteLine("Press enter to continue to next section");
             Console.ReadLine();
 
         }
@@ -176,9 +177,7 @@ namespace AI
 
         static void Main() //Taylor Format and Edit Code
         {
-            Todd();
-            Dhugald();
-            Fynn();
+           
             string choice = null;
             while (choice != "yes")
             {
