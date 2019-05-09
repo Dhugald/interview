@@ -176,9 +176,6 @@ namespace AI
 
         static void Main() //Taylor Format and Edit Code
         {
-            Todd();
-            Dhugald();
-            Fynn();
             string choice = null;
             while (choice != "yes")
             {
