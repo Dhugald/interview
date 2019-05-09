@@ -45,7 +45,7 @@ namespace AI
         }
         public static void Fynn()
         {
-            string preanswer1, answer2, answer3, answer4, answer5, driving;
+            string preanswer1;
             int answer1;
 
             Console.WriteLine("Would You like to work Part time(1) or Full time(2)? ");
@@ -67,12 +67,9 @@ namespace AI
                 answer2 = Console.ReadLine();
 
             }
-            else
-            {
-                Console.WriteLine("How many hours per week would you like to work? ");
-                answer3 = Console.ReadLine();
+            Console.WriteLine("How many hours per week would you like to work? ");
+            answer3 = Console.ReadLine();
 
-            }
 
             Console.WriteLine("Can you work weekends? ");
             answer4 = Console.ReadLine();
@@ -141,17 +138,6 @@ namespace AI
                 }
             }
 
-
-
-        
-
-
-
-
-
-
-
-
         }
         public static void Multichoice1()
         {
@@ -168,18 +154,21 @@ namespace AI
         {
             Console.WriteLine("Results");
             Console.WriteLine($"Age:{age}\n Name:{name}");
-            Console.WriteLine($"Part(1) or Full(2) Time: {answer1}");
+            Console.WriteLine($"Part(1) or Full(2) Time: {answer1} \n Work Day or Night: {answer2} \n Hours: {answer3} Work weekends: {answer4}");
+            Console.WriteLine($"Drivers License: {answer5}");
+            if (answer5 == "yes")
+            {
+                Console.WriteLine($"Deleveries: {driving}");
+            }
+
         }
 
 
 
         static void Main() //Taylor Format and Edit Code
         {
-            Todd();
-            Dhugald();
-            Fynn();
-            string choice = null;
-            while (choice != "yes")
+            string choice = "yes";
+            while (choice == "yes")
             {
                 Todd();
                 Results();
