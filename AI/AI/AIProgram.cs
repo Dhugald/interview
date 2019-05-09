@@ -31,7 +31,7 @@ namespace AI
         public static void Fynn()
         {
             string preanswer1, answer2, answer3, answer4, answer5, driving;
-            int answer1
+            int answer1;
 
             Console.WriteLine("Would You like to work Part time(1) or Full time(2)? ");
             preanswer1 = Console.ReadLine();
