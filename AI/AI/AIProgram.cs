@@ -9,7 +9,7 @@ namespace AI
     class AIProgram
     {
         public static int age, experience, hearAboutJob;
-        public static string name, AnswerMcDonalds, Leaving, DegreeYN, NumDegrees;
+        public static string name, AnswerMcDonalds, Leaving, DegreeYN, NumDegrees, answer1, answer2, answer3, answer4, answer5, driving, HearAboutJobAnswer;
         public static string[] DegreesArray;
         public static bool student;
         public static void Todd()
