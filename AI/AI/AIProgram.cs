@@ -10,20 +10,39 @@ namespace AI
     {
         public static int age, experience, hearAboutJob;
         public static string name, AnswerMcDonalds, Leaving, DegreeYN, NumDegrees;
+<<<<<<< HEAD
         public static string[] DegreesArray;
+=======
+        public static string[] DegreesArray = new string[];
+        public static bool student;
+>>>>>>> 2e25a9b78fbbd5af3ff946f06481d8b70ff1c03a
         public static void Todd()
         {
             string temp;
+            Console.WriteLine("What is your name? ");
+            name = Console.ReadLine();
+
             Console.WriteLine("How old are you?");
             temp = Console.ReadLine();
             age = Convert.ToInt32(temp);
 
-            Console.WriteLine($"{age}");
+            Console.WriteLine("Have you worked in hospitality before? Yes/No");
+            if (Console.ReadLine().ToUpper() == "YES")
+            {
+                Console.WriteLine("How many years have you worked in hospitality?");
+                temp = Console.ReadLine();
+                experience = Convert.ToInt32(temp);
+            }
 
-            Console.WriteLine("What is your name? ");
-            name = Console.ReadLine();
-            Console.ReadLine();
-            Console.WriteLine(name);
+            Console.WriteLine("Are you currently a student? Yes/No");
+            if (Console.ReadLine().ToUpper() == "YES")
+            {
+                student = true;
+            }
+            else
+            {
+                student = false;
+            }
 
             Console.ReadLine();
 
@@ -48,8 +67,8 @@ namespace AI
                 answer3 = Console.ReadLine();
 
             }
-            
-            
+
+
             Console.WriteLine("Can you work weekends? ");
             answer4 = Console.ReadLine();
             Console.WriteLine("Do you have a drivers license? ");
@@ -131,7 +150,7 @@ namespace AI
 
 
 
-       
+
 
 
         }
@@ -151,8 +170,8 @@ namespace AI
 
         static void Main()
         {
-            Dhugald();
             Todd();
+            Dhugald();
             Fynn();
 
         }
