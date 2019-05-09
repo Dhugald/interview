@@ -113,7 +113,7 @@ namespace AI
             Console.WriteLine("Please enter a number for the answer");
             string temp = Console.ReadLine();
             hearAboutJob = Convert.ToInt32(temp);
-<<<<<<< HEAD
+
             string HearAboutJobAnswer;
             if (hearAboutJob == 1)
             {
@@ -133,12 +133,7 @@ namespace AI
                 Console.WriteLine("Please enter 'other' answer: ");
                 HearAboutJobAnswer = Console.ReadLine();
             }
-=======
 
-<<<<<<< HEAD
-            
-=======
->>>>>>> eced932b52e44f0f65c4c847d3e9e593a2b4f54f
 
             Console.WriteLine("Do you have any Degree(s)? (Yes/No)");
             string degreeYN = Console.ReadLine().ToLower();
@@ -162,7 +157,7 @@ namespace AI
         
 
 
->>>>>>> 2e25a9b78fbbd5af3ff946f06481d8b70ff1c03a
+
 
 
 
