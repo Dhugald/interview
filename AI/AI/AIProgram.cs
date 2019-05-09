@@ -170,14 +170,8 @@ namespace AI
 
         static void Main() //Taylor Format and Edit Code
         {
-<<<<<<< HEAD
-           
-            string choice = null;
-            while (choice != "yes")
-=======
             string choice = "yes";
             while (choice == "yes")
->>>>>>> fe258ff829cc983afbe6b17d739c54032ba518dd
             {
                 Todd();
                 Fynn();
