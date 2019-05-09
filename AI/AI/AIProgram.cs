@@ -10,7 +10,7 @@ namespace AI
     {
         public static int age, experience, hearAboutJob;
         public static string name, AnswerMcDonalds, Leaving, DegreeYN, NumDegrees;
-        public static string[] DegreesArray = new string[];
+        public static string[] DegreesArray;
         public static void Todd()
         {
             string temp;
@@ -87,7 +87,25 @@ namespace AI
             Console.WriteLine("Please enter a number for the answer");
             string temp = Console.ReadLine();
             hearAboutJob = Convert.ToInt32(temp);
-
+            string HearAboutJobAnswer;
+            if (hearAboutJob == 1)
+            {
+                HearAboutJobAnswer = "On an advertisement";
+                
+            }
+            if (hearAboutJob == 2)
+            {
+                HearAboutJobAnswer = "From a friend";
+            }
+            if (hearAboutJob == 3)
+            {
+                HearAboutJobAnswer = "Phonebook";
+            }
+            if (hearAboutJob == 4)
+            {
+                Console.WriteLine("Please enter 'other' answer: ");
+                HearAboutJobAnswer = Console.ReadLine();
+            }
 
             Console.WriteLine("Do you have any Degree(s)? (Yes/No)");
             string degreeYN = Console.ReadLine().ToLower();
