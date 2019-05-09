@@ -60,14 +60,6 @@ namespace AI
                 driving = Console.ReadLine().ToLower();
             }
         }
-        public static void Taylor()
-        {
-
-
-
-
-
-        }
         public static void Dhugald()
         {
             Console.WriteLine($"Have you worked at McDonalds in the past? (Yes/No)");
@@ -108,15 +100,28 @@ namespace AI
 
         }
 
-
-
-
-        static void Main()
+        public static void Results() //Taylor
         {
-            Dhugald();
-            Todd();
-            Fynn();
+            Console.WriteLine("Results");
+            Console.WriteLine($"Age:{age}\n Name:{name}");
+            Console.WriteLine($"Part(1) or Full(2) Time: {answer1}");
+        }
 
+
+
+        static void Main() //Taylor Format and Edit Code
+        {
+            string choice = null;
+            while (choice != "yes")
+            {
+                Todd();
+                Results();
+                Fynn();
+                Dhugald();
+                Console.WriteLine("Do you want to make changes? ");
+                choice = Console.ReadLine().ToLower();
+            }
+            Console.WriteLine("Thank you for your submission.");
         }
     }
 }
