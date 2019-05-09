@@ -161,6 +161,8 @@ namespace AI
             {
                 Console.WriteLine($"Deleveries: {driving}");
             }
+            Console.ReadLine();
+
 
         }
 
@@ -172,9 +174,9 @@ namespace AI
             while (choice == "yes")
             {
                 Todd();
-                Results();
                 Fynn();
                 Dhugald();
+                Results();
                 Console.WriteLine("Do you want to make changes? ");
                 choice = Console.ReadLine().ToLower();
             }
