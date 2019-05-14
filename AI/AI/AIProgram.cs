@@ -42,12 +42,11 @@ namespace AI
 
             Console.WriteLine("Press enter to continue to next section");
             Console.ReadLine();
-
+            Console.Clear();
         }
         public static void Fynn()
         {
             string preanswer1;
-            int answer1;
 
             Console.WriteLine("Would You like to work Part time(1) or Full time(2)? ");
             preanswer1 = Console.ReadLine();
@@ -81,6 +80,7 @@ namespace AI
                 Console.WriteLine("Would you want to do deliveries? ");
                 driving = Console.ReadLine().ToLower();
             }
+            Console.Clear();
         }
         public static void Dhugald()
         {
@@ -102,7 +102,6 @@ namespace AI
             string temp = Console.ReadLine();
             hearAboutJob = Convert.ToInt32(temp);
 
-            string HearAboutJobAnswer;
             if (hearAboutJob == 1)
             {
                 HearAboutJobAnswer = "On an advertisement";
@@ -155,13 +154,27 @@ namespace AI
         {
             Console.WriteLine("Results");
             Console.WriteLine($"Age:{age}\n Name:{name}");
-            Console.WriteLine($"Part(1) or Full(2) Time: {answer1} \n Work Day or Night: {answer2} \n Hours: {answer3} Work weekends: {answer4}");
+            Console.WriteLine($"How many years have you worked in hospitality? {experience}");
+            Console.WriteLine($"Are you currently a student? {student}");
+            Console.WriteLine($"Part or Full Time:");
+            if (answer1 == 1)
+            {
+                Console.Write("Full");
+            }
+            else
+            {
+                Console.Write("Part");
+            }
+            Console.WriteLine($"Work Day or Night: {answer2} \n Hours: {answer3} Work weekends: {answer4}");
             Console.WriteLine($"Drivers License: {answer5}");
             if (answer5 == "yes")
             {
                 Console.WriteLine($"Deleveries: {driving}");
             }
+            Console.WriteLine($"Maccas? {AnswerMcDonalds}");
+            Console.WriteLine($"How you heard about us: {HearAboutJobAnswer}");
             Console.ReadLine();
+
 
 
         }
@@ -179,6 +192,7 @@ namespace AI
                 Results();
                 Console.WriteLine("Do you want to make changes? ");
                 choice = Console.ReadLine().ToLower();
+                Console.Clear();
             }
             Console.WriteLine("Thank you for your submission.");
         }
