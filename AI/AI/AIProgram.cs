@@ -186,6 +186,7 @@ namespace AI
             string choice = "yes";
             while (choice == "yes")
             {
+                Console.WriteLine("Application form");
                 Todd();
                 Fynn();
                 Dhugald();
